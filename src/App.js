@@ -108,52 +108,52 @@ const likiditeOrani = aktif / borc;`
       </nav>
 
       {/* Hero Section */}
-      <section className="relative z-10 pt-8 pb-12 sm:pt-16 sm:pb-20 lg:pt-24 lg:pb-32">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 sm:mb-6 leading-tight">
-              <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-                Muhasebe Dünyası
-              </span>
-              <br />
-              <span className={isDark ? 'text-white' : 'text-gray-900'}>
-                Yapay Zeka ile Buluşuyor...
-              </span>
-            </h1>
-            
-            <div className={`text-base sm:text-lg md:text-xl lg:text-2xl mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
-              <p className="mb-2">Muhasebe profesyonelleri için tasarlanmış AI destekli platform.</p> 
-              <p>Forum, makaleler ve akıllı araçlarla mesleğinizi bir üst seviyeye taşıyın.</p>
-            </div>
+<section className="relative z-10 pt-8 pb-12 sm:pt-16 sm:pb-20 lg:pt-24 lg:pb-32">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="text-center">
+      <h1 className="font-bold mb-4 sm:mb-6 leading-tight">
+        <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent block text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-justify">
+          Muhasebe Dünyası
+        </span>
+        <span className={`${isDark ? 'text-white' : 'text-gray-900'} block text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-justify mt-2`}>
+          Yapay Zeka ile Buluşuyor...
+        </span>
+      </h1>
+      
+      <div className={`text-base sm:text-lg md:text-xl lg:text-2xl mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed ${isDark ? 'text-gray-300' : 'text-gray-600'} text-justify`}>
+        <p className="mb-2">Muhasebe profesyonelleri için tasarlanmış AI destekli platform.</p> 
+        <p>Forum, makaleler ve akıllı araçlarla mesleğinizi bir üst seviyeye taşıyın.</p>
+      </div>
 
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-8 sm:mb-16 px-4">
-              <button className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-xl font-semibold text-base sm:text-lg hover:from-blue-600 hover:to-purple-700 transform hover:scale-105 transition-all duration-200 shadow-lg">
-                Forum
-              </button>
-              <button className={`w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 ${isDark ? 'bg-gray-800 hover:bg-gray-700' : 'bg-white hover:bg-gray-50'} ${isDark ? 'text-white' : 'text-gray-900'} rounded-xl font-semibold text-base sm:text-lg border ${isDark ? 'border-gray-700' : 'border-gray-200'} transform hover:scale-105 transition-all duration-200 shadow-lg`}>
-                AI Tools
-              </button>
-            </div>
+      {/* Butonlar - Mobilde yan yana */}
+      <div className="flex flex-row gap-3 sm:gap-4 justify-center items-center mb-8 sm:mb-16 px-4 max-w-md mx-auto">
+        <button className="flex-1 px-4 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-xl font-semibold text-base sm:text-lg hover:from-blue-600 hover:to-purple-700 transform hover:scale-105 transition-all duration-200 shadow-lg">
+          forum
+        </button>
+        <button className={`flex-1 px-4 sm:px-8 py-3 sm:py-4 ${isDark ? 'bg-gray-800 hover:bg-gray-700' : 'bg-white hover:bg-gray-50'} ${isDark ? 'text-white' : 'text-gray-900'} rounded-xl font-semibold text-base sm:text-lg border ${isDark ? 'border-gray-700' : 'border-gray-200'} transform hover:scale-105 transition-all duration-200 shadow-lg`}>
+          ai tools
+        </button>
+      </div>
 
-            {/* Search Bar */}
-            <form action="https://forum.kebirxai.tr/search" target="_blank" method="get" className="max-w-2xl mx-auto px-4">
-              <div className={`relative backdrop-blur-md ${isDark ? 'bg-gray-800/50' : 'bg-white/50'} rounded-2xl border ${isDark ? 'border-gray-700' : 'border-gray-200'} shadow-xl`}>
-                <input
-                  type="text"
-                  name="q"
-                  placeholder="Muhasebe konularında arama yapın..."
-                  className={`w-full px-4 sm:px-6 py-3 sm:py-4 bg-transparent ${isDark ? 'text-white placeholder-gray-400' : 'text-gray-900 placeholder-gray-500'} text-base sm:text-lg rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 pr-12 sm:pr-14`}
-                />
-                <button type="submit" className="absolute right-2 sm:right-3 top-1/2 transform -translate-y-1/2 p-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg hover:from-blue-600 hover:to-purple-700 transition-all">
-                  <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                  </svg>
-                </button>
-              </div>
-            </form>
-          </div>
+      {/* Search Bar */}
+      <form action="https://forum.kebirxai.tr/search" target="_blank" method="get" className="max-w-2xl mx-auto px-4">
+        <div className={`relative backdrop-blur-md ${isDark ? 'bg-gray-800/50' : 'bg-white/50'} rounded-2xl border ${isDark ? 'border-gray-700' : 'border-gray-200'} shadow-xl`}>
+          <input
+            type="text"
+            name="q"
+            placeholder="Muhasebe konularında arama yapın..."
+            className={`w-full px-4 sm:px-6 py-3 sm:py-4 bg-transparent ${isDark ? 'text-white placeholder-gray-400' : 'text-gray-900 placeholder-gray-500'} text-base sm:text-lg rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 pr-12 sm:pr-14`}
+          />
+          <button type="submit" className="absolute right-2 sm:right-3 top-1/2 transform -translate-y-1/2 p-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg hover:from-blue-600 hover:to-purple-700 transition-all">
+            <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </button>
         </div>
-      </section>
+      </form>
+    </div>
+  </div>
+</section>
 
       {/* Interactive Demo Section */}
       <section className="relative z-10 py-12 sm:py-16 lg:py-24">
