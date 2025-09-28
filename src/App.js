@@ -105,13 +105,11 @@ const likiditeOrani = aktif / borc;`
             </h1>
             
             <p className={`text-lg sm:text-xl lg:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
-              Muhasebe profesyonelleri için tasarlanmış AI destekli platform. 
-              Forum, makaleler ve akıllı araçlarla mesleğinizi bir üst seviyeye taşıyın.
-            </p>
-
+              Muhasebe profesyonelleri için tasarlanmış AI destekli platform.</p> 
+            <p>Forum, makaleler ve akıllı araçlarla mesleğinizi bir üst seviyeye taşıyın.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
               <button className="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-xl font-semibold text-lg hover:from-blue-600 hover:to-purple-700 transform hover:scale-105 transition-all duration-200 shadow-lg">
-                Forum
+                forum
               </button>
               <button className={`w-full sm:w-auto px-8 py-4 ${isDark ? 'bg-gray-800 hover:bg-gray-700' : 'bg-white hover:bg-gray-50'} ${isDark ? 'text-white' : 'text-gray-900'} rounded-xl font-semibold text-lg border ${isDark ? 'border-gray-700' : 'border-gray-200'} transform hover:scale-105 transition-all duration-200 shadow-lg`}>
                 AI Tools
@@ -195,7 +193,7 @@ const likiditeOrani = aktif / borc;`
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
             <span className={isDark ? 'text-white' : 'text-gray-900'}>
-              Neden KebirX?
+              Neden kebirX !?
             </span>
           </h2>
         </div>
@@ -261,7 +259,7 @@ const likiditeOrani = aktif / borc;`
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="https://forum.kebirxai.tr" target="_blank">
               <button className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-xl font-semibold text-lg hover:from-blue-600 hover:to-purple-700 transform hover:scale-105 transition-all duration-200 shadow-lg">
-                Ücretsiz Başla
+                Ücretsiz Başla!
               </button>
             </a>
           </div>
