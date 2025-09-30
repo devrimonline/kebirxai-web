@@ -122,14 +122,19 @@ const likiditeOrani = aktif / borc;`
         </span>
       </h1>
 
-      {/* Açıklama Metni - Şık tipografi + badge */}
+      {/* Açıklama Metni */}
 <div className={`text-base sm:text-lg md:text-xl lg:text-2xl max-w-4xl mx-auto leading-relaxed ${isDark ? 'text-gray-200' : 'text-gray-700'} text-center mb-10 sm:mb-14`}>
+  
+  {/* İlk Satır */}
   <p className="mb-4 font-semibold">
     Muhasebe profesyonelleri için tasarlanmış{" "}
-    <span className="text-blue-500">AI destekli platform.</span>
+    <span className="text-blue-500 block sm:inline">AI destekli platform.</span>
   </p>
-  <p className={`inline-block px-4 py-2 rounded-xl ${isDark ? 'bg-gray-800 text-gray-300' : 'bg-gray-100 text-gray-600'} text-sm sm:text-base`}>
-    Forum, makaleler ve akıllı araçlarla mesleğinizi bir üst seviyeye taşıyın.
+
+  {/* İkinci Satır (Badge Tarzı değil, normal ama iki cümleye bölünmüş) */}
+  <p className={`${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
+    <span className="block sm:inline">Forum, makaleler ve akıllı araçlarla</span>
+    <span className="block sm:inline"> mesleğinizi bir üst seviyeye taşıyın.</span>
   </p>
 </div>
 
