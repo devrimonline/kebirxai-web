@@ -125,15 +125,59 @@ const likiditeOrani = aktif / borc;`
               <p>Forum, makaleler ve akıllı araçlarla mesleğinizi bir üst seviyeye taşıyın.</p>
             </div>
 
-            {/* Butonlar - Mobilde yan yana */}
-            <div className="flex flex-row gap-3 sm:gap-4 justify-center items-center mb-8 sm:mb-16 px-4 max-w-md mx-auto">
-              <button className="flex-1 px-4 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-xl font-semibold text-base sm:text-lg hover:from-blue-600 hover:to-purple-700 transform hover:scale-105 transition-all duration-200 shadow-lg">
-                forum
-              </button>
-              <button className={`flex-1 px-4 sm:px-8 py-3 sm:py-4 ${isDark ? 'bg-gray-800 hover:bg-gray-700' : 'bg-white hover:bg-gray-50'} ${isDark ? 'text-white' : 'text-gray-900'} rounded-xl font-semibold text-base sm:text-lg border ${isDark ? 'border-gray-700' : 'border-gray-200'} transform hover:scale-105 transition-all duration-200 shadow-lg`}>
-                ai tools
-              </button>
-            </div>
+            {/* Butonlar - Responsive Layout */}
+<div className="mb-8 sm:mb-16 px-4">
+  {/* PC/Laptop: 3 buton yan yana */}
+  <div className="hidden sm:flex gap-4 justify-center items-center max-w-4xl mx-auto">
+    <button className="flex-1 px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-xl font-semibold text-lg hover:from-blue-600 hover:to-purple-700 transform hover:scale-105 transition-all duration-200 shadow-lg">
+      forum
+    </button>
+    <a 
+      href="https://www.youtube.com/@kebirxtv" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      className="flex-1"
+    >
+      <button className="w-full px-8 py-4 bg-red-600 text-white rounded-xl font-semibold text-lg hover:bg-red-700 transform hover:scale-105 transition-all duration-200 shadow-lg flex items-center justify-center gap-2">
+        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+        </svg>
+        kebirXTV
+      </button>
+    </a>
+    <button className={`flex-1 px-8 py-4 ${isDark ? 'bg-gray-800 hover:bg-gray-700' : 'bg-white hover:bg-gray-50'} ${isDark ? 'text-white' : 'text-gray-900'} rounded-xl font-semibold text-lg border ${isDark ? 'border-gray-700' : 'border-gray-200'} transform hover:scale-105 transition-all duration-200 shadow-lg`}>
+      ai tools
+    </button>
+  </div>
+
+  {/* Mobil: Forum + kebirXTV üstte, AI Tools altta */}
+  <div className="sm:hidden space-y-3 max-w-md mx-auto">
+    {/* Üst satır: Forum + kebirXTV */}
+    <div className="flex gap-3">
+      <button className="flex-1 px-4 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-xl font-semibold text-base hover:from-blue-600 hover:to-purple-700 transform hover:scale-105 transition-all duration-200 shadow-lg">
+        forum
+      </button>
+      <a 
+        href="https://www.youtube.com/@kebirxtv" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        className="flex-1"
+      >
+        <button className="w-full px-4 py-3 bg-red-600 text-white rounded-xl font-semibold text-base hover:bg-red-700 transform hover:scale-105 transition-all duration-200 shadow-lg flex items-center justify-center gap-1">
+          <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+          </svg>
+          kebirXTV
+        </button>
+      </a>
+    </div>
+    
+    {/* Alt satır: AI Tools */}
+    <button className={`w-full px-4 py-3 ${isDark ? 'bg-gray-800 hover:bg-gray-700' : 'bg-white hover:bg-gray-50'} ${isDark ? 'text-white' : 'text-gray-900'} rounded-xl font-semibold text-base border ${isDark ? 'border-gray-700' : 'border-gray-200'} transform hover:scale-105 transition-all duration-200 shadow-lg`}>
+      ai tools
+    </button>
+  </div>
+</div>
 
             {/* Search Bar */}
             <form action="https://forum.kebirxai.tr/search" target="_blank" method="get" className="max-w-2xl mx-auto px-4">
