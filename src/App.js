@@ -125,11 +125,7 @@ const likiditeOrani = aktif / borc;`
       {/* Açıklama Metni - Daha şık ve orantılı */}
       <div className={`text-base sm:text-lg md:text-xl lg:text-2xl max-w-lg sm:max-w-2xl mx-auto leading-relaxed ${isDark ? 'text-gray-300' : 'text-gray-600'} text-center mb-10 sm:mb-16`}>
         <p className="mb-3 sm:mb-4">
-          Muhasebe profesyonelleri için tasarlanmış AI destekli platform.
-        </p>
-        <p>
-          Forum, makaleler ve akıllı araçlarla mesleğinizi bir üst seviyeye taşıyın.
-        </p>
+          Muhasebe profesyonelleri için tasarlanmış AI destekli platform.</p> Forum, makaleler ve akıllı araçlarla mesleğinizi bir üst seviyeye taşıyın.
       </div>
 
       {/* Butonlar - Responsive Layout */}
@@ -140,12 +136,12 @@ const likiditeOrani = aktif / borc;`
             forum
           </button>
           <a 
-            href="https://www.youtube.com/@senin-kanal-adin" 
+            href="https://www.youtube.com/@kebirxtv" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="flex-1"
           >
-            <button className="w-full px-8 py-4 bg-red-600 text-white rounded-xl font-semibold text-lg hover:bg-red-700 transform hover:scale-105 transition-all duration-200 shadow-lg flex items-center justify-center gap-2">
+            <button className="w-full px-8 py-4 bg-red-600 text-black rounded-xl font-semibold text-lg hover:bg-red-700 hover:text-black transform hover:scale-105 transition-all duration-200 shadow-lg flex items-center justify-center gap-2">
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
               </svg>
@@ -165,12 +161,12 @@ const likiditeOrani = aktif / borc;`
               forum
             </button>
             <a 
-              href="https://www.youtube.com/@senin-kanal-adin" 
+              href="https://www.youtube.com/@kebirxtv" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="flex-1"
             >
-              <button className="w-full px-4 py-3 bg-red-600 text-white rounded-xl font-semibold text-base hover:bg-red-700 transform hover:scale-105 transition-all duration-200 shadow-lg flex items-center justify-center gap-1">
+              <button className="w-full px-4 py-3 bg-red-600 text-black rounded-xl font-semibold text-base hover:bg-red-700 hover:text-black transform hover:scale-105 transition-all duration-200 shadow-lg flex items-center justify-center gap-1">
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
                 </svg>
